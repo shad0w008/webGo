@@ -1,8 +1,7 @@
 welcome = "Welcome to iris framework!"
 
 [api]
-  leadersearch = "192.168.253.122:9135/acms/user/querySuperiorInfoByCode"
-  personsearch = "192.168.253.122:9135/acms/user/queryUsersByNameCodeEmailPref"
+
 
 [app]
   debug = false
@@ -16,46 +15,24 @@ welcome = "Welcome to iris framework!"
     name = "application"
 
 [auth]
-  authurl = "http://192.168.253.65:10001/user/tokeninfo"
-  logouturl = "http://192.168.253.65:10001/adminuser/logout"
-  systemkey = "vul_manage"
-  tokenname = "test_user_token"
+
 
 [database]
   driver = "mysql"
 
 [mysql]
   charset = "utf8"
-  databaseName = "vulnerability_management"
+  databaseName = "management"
   databasePassword = "123456"
   databaseUserName = "root"
   host = "192.168.248.109"
   port = 3306
 
 [notice]
-  appname = "vulmanage"
-  depteamil = "sec@meicai.cn"
-  dingdingswitch = "on"
-  directleadernotice = 0
-  emailswitch = "on"
-  indirectleadernotice = 3
-  mcqServerPath = "/gateway"
-  mcqServerPort = 80
-  mcqserver = "mcq.test.yunshanmeicai.com"
-  overdueremind = 3
-  overdueswitch = "off"
-  sendemailuser = "security@meicai.cn"
-  sendemailuserpasswd = "ql@f0X@RcMwAbZXurm"
-  smtpserver = "smtp.263.net"
-  smtpserverport = "25"
-  systemnoticereceiveuser = "shidongge@meicai.cn"
-  systemstatisticsreceiveuser = ""
-  testDingdingNoticeReceiveUser = "0097847"
-  topic = "EIA_NSC_TOPIC"
+
 
 [systemurl]
-  vuldetailurl = "http://vulmanage.yunshanmeicai.com/vulmanage/index.htm"
+ 
 
 [upload]
-  secretkey = "6c330baf-8f1c-479a-b244-178262a5b169"
-  tag = "vulplatform-web"
+
