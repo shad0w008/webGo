@@ -20,16 +20,18 @@
 	 })
       apis:=app.Party("/apis")
       {
+      	apis.Post("/login",control.Login)
+      	apis.Get("/logout",control.LogOut)
       	apis.Get("/aa", control.GetAa)
       	apis.Get("/once",control.Once)
 	 }
 
  }
     func main() {
-        fmt.Println("aa",config.Conf.Get("app.host").(string))
         app := iris.New()
         app.Use(recover.New())
         app.Use(logger.New())
+        app.Logger().SetLevel("debug")
         router(app)
         app.Run(iris.Addr(":8086"), iris.WithoutInterruptHandler)
         fmt.Println("aa",config.Conf.Get("app.host").(string))

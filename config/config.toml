@@ -22,7 +22,7 @@ welcome = "Welcome to iris framework!"
 
 [mysql]
   charset = "utf8"
-  databaseName = "management"
+  databaseName = "vulnerability_management"
   databasePassword = "123456"
   databaseUserName = "root"
   host = "192.168.248.109"
