@@ -22,8 +22,7 @@
       {
       	apis.Post("/login",control.Login)
       	apis.Get("/logout",control.LogOut)
-      	apis.Get("/aa", control.GetAa)
-      	apis.Get("/once",control.Once)
+      	apis.Get("/testlogin", control.TestLogin)
 	 }
 
  }

@@ -1,7 +1,6 @@
 package control
 
 import (
-	"fmt"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/sessions"
 	"webGo/model"
@@ -27,7 +26,6 @@ func Login(ctx iris.Context)  {
 }
 
 func LogOut(ctx iris.Context)  {
-	fmt.Println(ctx.Request().Cookies())
 	session :=sess.Start(ctx)
 	session.Set("authenticated",false)
 	session.Delete("authenticated")
